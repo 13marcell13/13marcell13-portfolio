@@ -1,0 +1,147 @@
+/* General styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    color: #eee;
+    background-color: #1e1e1e;
+}
+
+/* Container */
+.container {
+    width: 80%;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+/* Header */
+header {
+    background: #2b2b2b;
+    color: #fff;
+    padding-top: 30px;
+    min-height: 70px;
+    border-bottom: #3498db 3px solid; /* Changed to blue */
+    text-align: center;
+}
+
+header a {
+    color: #3498db; /* Changed to blue */
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 16px;
+}
+
+header ul {
+    padding: 0;
+    list-style: none;
+    text-align: center;
+}
+
+header li {
+    display: inline;
+    padding: 0 20px;
+}
+
+header nav {
+    margin-top: 10px;
+}
+
+/* Showcase */
+#about, #projects, #images, #contact {
+    padding: 20px 0;
+    text-align: center;
+}
+
+h1, h2, h3 {
+    color: #3498db; /* Changed to blue */
+}
+
+/* Projects */
+.project {
+    background: #333;
+    margin-bottom: 20px;
+    padding: 20px;
+    border: #444 1px solid;
+    color: #eee;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.project img {
+    max-width: 100%;
+    height: auto;
+    border: #444 1px solid;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+/* Images */
+.image-gallery {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.image-gallery img {
+    max-width: 100%;
+    height: auto;
+    border: #444 1px solid;
+    border-radius: 8px;
+}
+
+/* Contact */
+#contact ul {
+    list-style: none;
+    padding: 0;
+}
+
+#contact ul li {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px 0;
+}
+
+#contact ul li a {
+    color: #3498db; /* Changed to blue */
+    text-decoration: none;
+    margin-left: 10px;
+}
+
+/* Footer */
+footer {
+    background: #2b2b2b;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 20px;
+}
+
+/* Smooth scrolling */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Click animation */
+header nav ul li a.clicked {
+    animation: click-animation 0.3s ease-in-out;
+}
+
+@keyframes click-animation {
+    0% {
+        transform: scale(1);
+        color: #3498db; /* Changed to blue */
+    }
+    50% {
+        transform: scale(1.2);
+        color: #5dade2; /* Changed to lighter blue */
+    }
+    100% {
+        transform: scale(1);
+        color: #3498db; /* Changed to blue */
+    }
+}
